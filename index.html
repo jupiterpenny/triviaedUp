@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="trivia, smartSign">
+    <meta name="author" content="Jupiterpenny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .fadeMe{
+            margin-top: 25px;
+            font-size: 21px;
+            text-align: center;
+
+            -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 5s; /* Firefox < 16 */
+            -ms-animation: fadein 5s; /* Internet Explorer */
+            -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .container {
+            width: 480px;
+            height: 500px;
+            position: relative;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 50% 50%;
+            border-radius: 25px;
+            border: 5px solid black;
+        }
+        .card div {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 260px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 140px;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .card .front {
+            background: white;
+            color: black;
+            padding-top: 10%;
+        }
+        .card .back {
+            background: black;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+            color:white;
+            padding-top: 10%;
+        }
+        .card.flipped {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+
+        .txt{
+            position: relative;
+            top: -3px;
+            left: -3px;
+            text-shadow: 1px 1px white,
+            2px 2px white,
+            3px 3px white,
+            4px 4px white,
+            5px 5px white,
+            6px 6px white;
+        }
+
+        #qr{
+            border-radius: 25px;
+            border: 5px solid black;
+        }
+
+
+        @media only screen and (max-width: 900px) {
+            .container {
+                width: 380px;
+                height: 500px;
+            }
+
+            #title{
+                font-size: 30px;
+            }
+            #end{
+                font-size: 30px;
+            }
+        }
+
+
+        @media only screen and (min-width: 950px) {
+            .container {
+                width: 800px;
+                height: 550px;
+            }
+
+            h2{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 30px;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+            #qr{
+                width: 800px;
+                height: 575px;
+            }
+            #title{
+                font-size: 100px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            #end{
+                font-size: 75px;
+            }
+        }
+        
+             @media only screen and (min-width: 1500px) {
+            .container {
+                width: 1000px;
+                height: 800px;
+            }
+
+            h2{
+                font-size: 80px;
+            }
+            h3{
+                font-size: 50px;
+            }
+
+            h1{
+                font-size: 80px;
+            }
+            #qr{
+                width: 1000px;
+                height: 800px;
+                
+            }
+            #title{
+                font-size: 100px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            #end{
+                font-size: 75px;
+                padding-bottom: 100px;
+            }
+              #url{
+                font-size: 75px;
+                padding-bottom: 100px;
+            }
+        }
+        #Answer{
+        text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+}
+
+    </style>
+</head>
+<body>
+
+<div id="intro" style="text-align:center; font-family: Courgette, cursive;" >
+    <h1 class="fadeMe txt" id="title" style="text-align:center;">Trivia Time</h1>
+</div>
+
+
+<section id="card" class="container">
+    <div class="card" onclick="flip()">
+        <div class="front">
+            <h2 style="font-family: Courgette, cursive;" id="Questions"></h2>
+
+            <h3 id="one"></h3>
+            <h3 id="two"></h3>
+            <h3 id="three"></h3>
+
+            <span class="c" id="5"></span>
+        </div>
+        <div class="back">
+            <!--<h2 style="font-family: Courgette, cursive;" id="Questioned"></h2>-->
+            <h1 id ="Answer" class="fadeMe" style="font-size: 50px;"></h1>
+        </div>
+    </div>
+
+</section>
+
+<div style="text-align:center">
+    <h3 class="fadeMe txt" style="padding-bottom: 30px;" id="end"></h3>
+    <div style="text-align:center;">
+    <center><img id="qr" src="triviaQr.png" style="display:none;"/></center>
+</div>
+    <h3 class="fadeMe" style="padding-bottom: 30px; color:white;" id="url"></h3>
+</div>
+
+
+<script>
+
+    function Redirect()
+    {
+        window.location="index.html";
+    }
+    setTimeout('Redirect()', 25000);
+
+
+
+    setTimeout(function () {
+        getTrivia();
+    }, 1000);
+    setTimeout(function () {
+        document.getElementById("5").style.display = 'block';
+        c();
+    }, 4000);
+    setTimeout(function () {
+        document.getElementById("title").innerHTML = "Are you a trivia master?"
+        flip();
+    }, 9000);
+
+    setTimeout(function () {
+        document.getElementById("title").innerHTML = "Find out..."
+        document.getElementById("card").style.display = "none";
+        document.getElementById("qr").style.display = "block";
+        document.getElementById("end").innerHTML = "Play to win, play now free";
+        document.getElementById('url').innerHTML = "http://smartsigndisplay.xyz/triviaedUp/intro.html"
+        $("img").animate({
+            height: '380px',
+            width: '380px'
+        });
+    }, 14000);
+
+
+
+    function flip() {
+        $('.card').toggleClass('flipped');
+    }
+
+    function c(){
+        var n=$('.c').attr('id');
+        var c=n;
+        $('.c').text(c);
+        setInterval(function(){
+            c--;
+            if(c>=0){
+                $('.c').text(c);
+            }
+            if(c==0){
+                $('.c').text(n);
+            }
+        },1000);
+    }
+
+    setInterval(function(){
+        c();
+    },5000);
+
+</script>
+
+
+
+</body>
+</html>
+

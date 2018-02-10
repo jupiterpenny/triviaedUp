@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="trivia, smartSign">
+    <meta name="author" content="Jupiterpenny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TriviaedUp!</title>
+    <style>
+
+        body {
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .fadeMe{
+            margin-top: 25px;
+            font-size: 21px;
+            text-align: center;
+
+            -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 5s; /* Firefox < 16 */
+            -ms-animation: fadein 5s; /* Internet Explorer */
+            -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .txt{
+            position: relative;
+            top: -3px;
+            left: -3px;
+            text-shadow: 1px 1px white,
+            2px 2px white,
+            3px 3px white,
+            4px 4px white,
+            5px 5px white,
+            6px 6px white;
+        }
+
+        .ghost-button-semi-transparent {
+            display: inline-block;
+            width: 200px;
+            height: 75px;
+            padding: 8px;
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+            transition: background-color 0.2s ease-out,
+            border-color 0.2s ease-out;
+            border-radius: 5px;
+        }
+        .ghost-button-semi-transparent:hover,
+        .ghost-button-semi-transparent:active {
+            background-color: rgba(255, 255, 255, 0.4);
+            border-color: rgba(255, 255, 255, 0.4);
+            transition: background-color 0.3s ease-in,
+            border-color 0.3s ease-in;
+            /*border: 1px solid #fff;*/
+            border-radius: 5px;
+        }
+
+        .blue{
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+        }
+
+        .blue:hover, .blue:active{
+            color: black;
+            background-color: #fff;
+            border-color: black;
+            border: 1px solid black;
+        }
+
+
+        .white{
+            color: black;
+            border: 1px solid black;
+            background-color: #fff;
+        }
+
+        .white:hover, .blue:active{
+            color: white;
+            background-color: black;
+            border-color: #fff;
+            border: 1px solid #fff;
+        }
+
+
+        @media only screen and (max-width: 900px) {
+            #title{
+                font-size: 55px;
+                padding-bottom: 50px;
+            }
+            ghost-button-semi-transparent {
+                /*display: inline-block;*/
+                width: 200px;
+                height: 150px;
+                font-size: 40px;
+            }
+        }
+
+
+        @media only screen and (min-width: 950px) {
+            #title{
+                font-size: 100px;
+                padding-bottom: 100px;
+                padding-top: 30px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 30px;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+        }
+
+        @media only screen and (min-width: 1500px) {
+
+            #title{
+                font-size: 150px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            .ghost-button-semi-transparent {
+                display: inline-block;
+                width: 400px;
+                height: 250px;
+                font-size: 40px;
+            }
+            h2{
+                font-size: 80px;
+            }
+            h3{
+                font-size: 50px;
+            }
+
+            h1{
+                font-size: 80px;
+            }
+        }
+
+    </style>
+
+<body>
+<h1 class="fadeMe txt" id="title" style="text-align:center; padding-top: 10%;">Get your trivia On</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6" style="padding-top: 2%;">
+            <div style="text-align:center;">
+                <img id="qr" src="rmQr.png"/>
+            </div>
+            <a href="http://restaurantmaja.com"><h1 class="fadeMe" style="padding-bottom: 30px; color:white;" id="url">restaurantmaja.com</h1></a>
+
+        </div>
+
+ 
+</div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

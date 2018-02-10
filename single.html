@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="trivia, smartSign">
+    <meta name="author" content="Jupiterpenny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Trivia</title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAgnGNSwtKFbRzFwxRwrUoJg3fvH-Oc6Zw",
+            authDomain: "triviaedup.firebaseapp.com",
+            databaseURL: "https://triviaedup.firebaseio.com",
+            projectId: "triviaedup",
+            storageBucket: "triviaedup.appspot.com",
+            messagingSenderId: "343165376591"
+        };
+        firebase.initializeApp(config);
+
+
+    </script>
+
+
+
+    <style>
+
+        body {
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .fadeMe{
+            margin-top: 25px;
+            font-size: 21px;
+            text-align: center;
+
+            -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 5s; /* Firefox < 16 */
+            -ms-animation: fadein 5s; /* Internet Explorer */
+            -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Opera < 12.1 */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .container {
+            width: 480px;
+            height: 500px;
+            position: relative;
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            -o-perspective: 800px;
+            perspective: 800px;
+
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 50% 50%;
+        }
+        .card div {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 80px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 140px;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        
+        }
+        .card .front {
+            color: black;
+            padding-top: 10%;
+        }
+        .card .back {
+            background: black;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+            color:white;
+            padding-top: 10%;
+        }
+        .card.flipped {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+
+        .txt{
+            position: relative;
+            top: -3px;
+            left: -3px;
+            text-shadow: 1px 1px white,
+            2px 2px white,
+            3px 3px white,
+            4px 4px white,
+            5px 5px white,
+            6px 6px white;
+        }
+
+        #Answer{
+            text-align: center;
+            vertical-align: middle;
+            line-height: 90px;
+        }
+
+
+        .ghost-button-semi-transparent {
+            display: inline-block;
+            width: 350px;
+            height: 80px;
+            padding: 8px;
+            color: white;
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+            background-color: transparent;
+            transition: background-color 0.2s ease-out,
+            border-color 0.2s ease-out;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+
+        @media only screen and (max-width: 900px) {
+            .container {
+                width: 370px;
+                height: 430px;
+                padding-bottom: 20px;
+            }
+            #Questions{
+                color:white;
+            }
+
+            #title{
+                font-size: 45px;
+                padding-bottom: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+             #one{
+                font-size: 20px;
+                 color:white;
+            }
+             #three{
+                font-size: 20px;
+                 color:white;
+            } 
+            #two{
+                font-size: 20px;
+                color:white;
+            }
+            h3{
+                font-size: 30px;
+               
+            }
+            
+            h2{
+                font-size: 30px;
+                 padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            h1{
+                font-size: 25px;
+            }
+
+
+             .card .front {
+            color: black;
+            padding-top: 10%;
+            /*      border-radius: 10px;*/
+            /*border: 5px solid black;*/
+        }
+        .card .back {
+            background: black;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+            color:white;
+            padding-top: 10%;
+                  border-radius: 10px;
+            border: 5px solid black;
+        }
+        }
+    
+
+
+        @media only screen and (min-width: 950px) {
+            .container {
+                width: 800px;
+                height: 610px;
+            }
+
+            h2{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 30px;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+             #one{
+                font-size: 35px;
+            }
+            #two{
+                font-size: 35px;
+            }
+            
+            #three{
+                font-size: 35px;
+            }
+
+            #title{
+                font-size: 100px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+
+            .card {
+                   border-radius: 25px;
+            border: 10px solid black;
+            }
+             .card .front {
+            background: white;
+            color: black;
+            padding-top: 10%;
+                  border-radius: 10px;
+            border: 5px solid black;
+        }
+        .card .back {
+            background: black;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+            color:white;
+            padding-top: 10%;
+                  border-radius: 10px;
+            border: 5px solid black;
+        }
+        #Questions{
+            padding-bottom: 50px;
+        }
+        }
+
+
+        @media only screen and (min-width: 1500px) {
+            .container {
+                width: 1000px;
+                height: 850px;
+            }
+
+            h2{
+                font-size: 80px;
+            }
+            h3{
+                font-size: 50px;
+            }
+
+            h1{
+                font-size: 80px;
+            }
+            
+            #one{
+                font-size: 45px;
+            }
+            
+            #two{
+                font-size: 45px;
+            }
+            
+            #three{
+                font-size: 45px;
+            }
+
+            #title{
+                font-size: 100px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+             .card {
+                   border-radius: 25px;
+            border: 10px solid black;
+            }
+             .card .front {
+            background: white;
+            color: black;
+            padding-top: 10%;
+                  border-radius: 10px;
+            border: 5px solid black;
+        }
+        .card .back {
+            background: black;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+            color:white;
+            padding-top: 10%;
+                  border-radius: 10px;
+            border: 5px solid black;
+        }
+        #gameEnded{
+            font-size: 30px;
+        }
+        }
+        
+
+    </style>
+
+<body onload="getTrivia();">
+<h1 class="fadeMe txt" id="title" style="text-align:center;">Get your trivia On</h1>
+
+
+<div class="container-absolute">
+
+<section id="card" class="container">
+    <div class="card">
+        <div class="front">
+            <h2 style="font-family: Courgette, cursive;" id="Questions"></h2>
+
+ <H1 id="one" onClick="checkOne();"></H1>
+ <H1 id="two" onClick="checkTwo();"></H1>
+ <H1 id="three" onClick="checkThree();"></H1>
+ 
+
+        </div>
+        <div class="back">
+            <br>
+          
+            <h1 id ="Answer" class="fadeMe" style="font-size: 50px; display:none;"></h1>
+            
+            <h1 id ="checked" class="fadeMe" style="font-size: 50px;"></h1>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+    <div id="gameEnded" style="text-align:center; padding-top: 7%; display:none;">
+        <h1 style="color: white; padding-bottom: 7%;">Game over, too many missed</h1>
+        <a href="leadershipboard.html"><button class="ghost-button-semi-transparent blue">view Leadership board</button></a>
+        <button id="sendScore" class="ghost-button-semi-transparent white" onClick="sendInfo()">Submit your score</button>
+        <a href="single.html"><button class="ghost-button-semi-transparent white" href="#">Play again </button></a>
+
+    </div>
+
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>

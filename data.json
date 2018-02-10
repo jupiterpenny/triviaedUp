@@ -1,0 +1,656 @@
+{
+  "trivia": [
+    {
+      "Question" : "How many Dr. Who's have there been?",
+      "Category": "Sci-Fi",
+      "one" : "Just one",
+      "two" : "Fifteen",
+      "three" : "Thirteen",
+      "Id": "1",
+      "Answer": "Thirteen",
+      "Number": 3
+    },
+
+    {
+      "Question" : "Who is the only woman in history to win an IndyCar Series race?",
+      "Category" : "Daytona",
+      "one" : "Danica Patrick",
+      "two" : "Janet Guthrie,",
+      "three" : "Sarah Fisher",
+      "Answer": "Danica Patrick",
+      "Number": 1
+    },
+    {
+      "Question" : "Which three James Bonds had scenes shot in Miami?",
+      "Category" : "Miami",
+      "one" : "Goldfinger, Thunderball, and Octopussy",
+      "two" : "Thunderball, Casino Royale, and Goldfinger",
+      "three" : "Dr.No, Casino Royal, and Goldfinger",
+      "Answer": "Thunderball, Casino Royale, and Goldfinger",
+      "Number": 2
+    },
+
+    {
+      "Question" : "What TV series was the inspiration for The Golden Girls?",
+      "Category" : "Miami",
+      "one" : "All in the Family",
+      "two" : "Miami Vice",
+      "three" : "Beverly Hill Billies.",
+      "Answer": "Miami Vice",
+      "Number": 2
+    },
+
+    {
+      "Question" : "What were the names of Bruce Wayne's parents?",
+      "Category" : "SuperHeroes",
+      "one" : "George and Elaine",
+      "two" : "James and Elizabeth",
+      "three" : "Thomas and Martha.",
+      "Answer": "Thomas and Martha",
+      "Number": 3
+    },
+
+    {
+      "Question" : "Why did Jabba the Hutt send bounty hunters after Han Solo?",
+      "Category" : "sci-fi",
+      "one" : "Because he killed Greedo",
+      "two" : "Because Han dumped Jabba's cargo",
+      "three" : "Because the empire offered a rewared for Han",
+      "Answer": "Because Han dumped Jabba's cargo",
+      "Number": 2
+    },
+    {
+      "Question" : "Who was the captain in the pilot episode of the original?",
+      "Category" : "sci-fi",
+      "one" : "Gates McFadden",
+      "two" : "James Kirk",
+      "three" : "Christopher Pike",
+      "Answer": "Christopher Pike",
+      "Number": 3
+    },
+
+    {
+      "Question" : "I'm a' get medieval on your ass. Who said that?",
+      "Category" : "Movies",
+      "one" : "Marsellus Wallace, Pulp Fiction",
+      "two" : "Mr Blonde, Reservoir Dogs",
+      "three" : "Django, Django Unchained",
+      "Answer": "Marsellus wallace, Pulp Fiction",
+      "Number": 1
+    },
+
+    {
+      "Question" : "What was Marilyn Monroe's name at birth?",
+      "Category" : "Movies",
+      "one" : "Emma Renolds",
+      "two" : "Norma Jeane Mortenson",
+      "three" : "Marilyn Ann Jeane",
+      "Answer": "Norma Jeane Mortenson",
+      "Number": 2
+    },
+    {
+      "Question": "Who was Wolverine's original enemy, 1974?",
+      "Category": "Superheroes",
+      "one": "DeadPool",
+      "two": "The Hulk",
+      "three": "BloodScream",
+      "Answer": "The Hulk",
+      "Number": 2
+    },
+    {
+      "Question": "Disillusioned with the governement, this Captain became...?",
+      "Category": "Superheroes",
+      "one": "The Nomad",
+      "two": "Captain America",
+      "three": "Daken",
+      "Answer": "The Nomad",
+      "Number": 1
+    },
+    {
+      "Question": "The Teenage Mutant Ninja Turtles were created as a parody for which character?",
+      "Category": "Superheroes",
+      "one": "Geriatric Gangrene Jujitsu Gerbils",
+      "two": "Daredevil",
+      "three": "Fantastic Four",
+      "Answer": "Daredevil",
+      "Number": 2
+    },
+    {
+      "Question": "How many laps was the first inaugural Rolex 24 At DAYTONA?",
+      "Category": "Daytona",
+      "one": "82",
+      "two": "75",
+      "three": "100",
+      "Answer": "82",
+      "Number": 1
+    },
+    {
+      "Question": "Who isthe only person to have served as Grand Marshal for both the DAYTONA 500 and the Coke Zero 400 Powered By Coca-Cola?",
+      "Category": "Daytona",
+      "one": "Dale Earnhardt",
+      "two": "Anthony “Rumble” Johnson",
+      "three": "George W. Bush",
+      "Answer": "George W. Bush",
+      "Number": 3
+    },
+    {"Question" : "What is the most-used DAYTONA 500 Pace Car?",
+      "Category": "Daytona",
+      "one" : "Pontiac Trans-Am",
+      "two":  "AMC Hornet SC/360",
+      "three": "Ford Torino GT",
+      "Answer" : " Pontiac Trans-Am",
+      "Number": 1
+    },
+    {
+      "Question": "What is Harley J. Earl, which the DAYTONA 500 trophy is named after, also known as?",
+      "Category": "Daytona",
+      "one": "Father of the Corvette",
+      "two": "Father of the races",
+      "three": "Father of the Pontiac",
+      "Answer": "Father of the Corvette",
+      "Number": 1
+    },
+    {
+      "Question": "What Guinness world record did Roy Ogletree break during the 2009 race?",
+      "Category": "Daytona",
+      "one": "most miles traveld by motor bike",
+      "two": "most miles traveled by Jet Ski",
+      "three": "most laps completed in under 5 hours",
+      "Answer": "most miles traveled by Jet Ski",
+      "Number": 2
+    },
+    {
+      "Question": "Who is the first and only to win the Sprint Unlimited, Daytona 500 and Coke Zero 400 Powered By Coca-Cola in the same season",
+      "Category": "Daytona",
+      "one": "Bobby Allison",
+      "two": "Alain Prost",
+      "three": "A.J. Foyt",
+      "Answer": "Bobby Allison",
+      "Number": 1
+    },
+    {
+      "Question": "How large is the Daytona International Speedway’s infield?",
+      "Category": "Daytona",
+      "one": "173 Acres",
+      "two": "180 Acres",
+      "three": "185 Acres",
+      "Answer": "180 Acres",
+      "Number": 2
+    },
+    {
+      "Question": "What ocean can you see from the Daytona 500 stadium?",
+      "Category": "Daytona",
+      "one": "Pacific Ocean",
+      "two": "Indian Ocean",
+      "three": "Atlantic Ocean",
+      "Answer": "Atlantic Ocean",
+      "Number": 3
+    },
+    {
+      "Question": "What is the name of Rockefeller's winter home located in Ormond Beach?",
+      "Category": "Daytona",
+      "one": "La Guerida",
+      "two": "The Casements",
+      "three": "Panama",
+      "Answer": "Mar-a-Lago",
+      "Number": 2
+    },
+     {
+      "Question": "What was the name of Daytona's first bike rally in 1937?",
+      "Category": "Daytona",
+      "one": "Daytona 100",
+      "two": "Daytona Races",
+      "three": "Daytona 200",
+      "Answer": "Daytona 200",
+      "Number": 3
+    },
+     {
+      "Question": "Who started the Daytona races?",
+      "Category": "Daytona",
+      "one": "Bobby Allison",
+      "two": "Bill France Sr",
+      "three": "Rockefeller",
+      "Answer": "Bobby Allison",
+      "Number": 2
+    },
+      {
+      "Question": "Who was the famous tycoon who wintered in Ormond Beach?",
+      "Category": "Daytona",
+      "one": "Bush",
+      "two": "Rockefeller",
+      "three": "Kennedy",
+      "Answer": "Rockefeller",
+      "Number": 2
+    },
+      {
+      "Question": "Which movie was partially filmed in Daytona Beach?",
+      "Category": "Daytona",
+      "one": "Caddyshack",
+      "two": "Waterboy",
+      "three": "Rockefeller",
+      "Answer": "Edward Scissorhands",
+      "Number": 2
+    },
+      {
+      "Question": "What movie said: when you realize you want to spend the rest of your life with somebody, you want the rest of your life to start soon?",
+      "Category": "Moives",
+      "one": "Breakfast At Tiffany's",
+      "two": "When Harry Met Sally",
+      "three": "Casablanca",
+      "Answer": "When Harray Met Sally",
+      "Number": 2
+    },
+      {
+      "Question": "What movie said: Chewie, we're home?",
+      "Category": "Movies",
+      "one": "Star Wars Episode I",
+      "two": "Star Trek",
+      "three": "Star Wars Episode VII",
+      "Answer": "Star Wars Episode VII",
+      "Number": 3
+    },
+      {
+      "Question": "What movie said: They call it a Royal with cheese?",
+      "Category": "Movie",
+      "one": "Pulp Fiction",
+      "two": "Django Unchained",
+      "three": "Reservoir Dogs",
+      "Answer": "Pulp Fiction",
+      "Number": 1
+    },
+      {
+      "Question": "What is the most spoken language in the world?",
+      "Category": "General",
+      "one": "Chinese",
+      "two": "English",
+      "three": "Spanish",
+      "Answer": "Chinese",
+      "Number": 1
+    },
+     {
+      "Question": "What is the second most spoken language in the world?",
+      "Category": "General",
+      "one": "Chinese",
+      "two": "English",
+      "three": "Spanish",
+      "Answer": "Spanish",
+      "Number": 3
+    },
+     {
+      "Question": "What currency is used in the Philippines?",
+      "Category": "General",
+      "one": "Peso",
+      "two": "Dollar",
+      "three": "Baht",
+      "Answer": "Peso",
+      "Number": 1
+    },
+    {
+      "Question": "Which best describes an amphibian?",
+      "Category": "General",
+      "one": "warm-blooded creatures that lay eggs in water",
+      "two": "cold-blooded creatures that lay eggs in water",
+      "three": "cold-blooded creatures that lay eggs on land",
+      "Answer": "cold-blooded creatures that lay eggs in water",
+      "Number": 2
+    },
+    {
+      "Question": "Which animal does not produce milk?",
+      "Category": "General",
+      "one": "porcupine",
+      "two": "bat",
+      "three": "penguin",
+      "Answer": "penguin",
+      "Number": 3
+    },
+    {
+      "Question": "Which astronaut was the first to go to space?",
+      "Category": "NASA",
+      "one": "Alan Shephard",
+      "two": "Yuri Gagarin",
+      "three": "penguin",
+      "Answer": "Neil Armstrong",
+      "Number": 2
+    },
+{
+      "Question": "Finish this quote, That's one small step for a man,...",
+      "Category": "NASA",
+      "one": "one giant leap for mankind",
+      "two": "one giant leap for man",
+      "three": "one giant step for man",
+      "Answer": "None giant leap for mankind",
+      "Number": 1
+    },
+ {
+      "Question": "What does NASA stand for?",
+      "Category": "NASA",
+      "one": "National Astronauts and Space Aeronautics",
+      "two": "National Aeronautics and Space Association",
+      "three": "National Aeronautics and Space Administration",
+      "Answer": "National Aeronautics and Space Administration",
+      "Number": 3
+    },
+     {
+      "Question": "What year did Neil Armstrong land on the moon?",
+      "Category": "NASA",
+      "one": "1968",
+      "two": "1972",
+      "three": "1969",
+      "Answer": "1969",
+      "Number": 3
+    },
+        {
+      "Question": "What was the name of the first moon landing mission?",
+      "Category": "NASA",
+      "one": "Mercury 7",
+      "two": "Apollo 11",
+      "three": "Apollo 7",
+      "Answer": "Apollo 7",
+      "Number": 2
+    },
+        {
+      "Question": "Where did Apollo 7 launch from?",
+      "Category": "NASA",
+      "one": "The Kennedy Space Center",
+      "two": "The NASA Space Center",
+      "three": "Space Center Houston",
+      "Answer": "The Kennedy Space Center",
+      "Number": 1
+    },
+    {
+      "Question": "What is the largest planet in our solar system?",
+      "Category": "NASA",
+      "one": "Jupiter",
+      "two": "Saturn",
+      "three": "Uranus",
+      "Answer": "Jupiter",
+      "Number": 1
+    },
+    {
+      "Question": "What is the name of the galaxy closest to ours?",
+      "Category": "NASA",
+      "one": "The Milky Way",
+      "two": "Andromeda",
+      "three": "Sombrero Galaxy",
+      "Answer": "Andromeda",
+      "Number": 2
+    },
+     {
+      "Question": "What is the longest running TV show in the US?",
+      "Category": "TV",
+      "one": "Law and Order",
+      "two": "Gunsmoke",
+      "three": "The Simpsons",
+      "Answer": "The Simpsons",
+      "Number": 3
+    },
+     {
+      "Question": "The Danger Zone, who sang that?",
+      "Category": "Music",
+      "one": "Mr.Mister",
+      "two": "Kenny Loggins",
+      "three": "Eddie Money",
+      "Answer": "Kenny Loggins",
+      "Number": 2
+    },
+    {
+      "Question": "Finish this quote by Weird Al, smells like....?",
+      "Category": "Music",
+      "one": "Nirvana",
+      "two": "Teen Spirit",
+      "three": "Yankovic",
+      "Answer": "Nirvana",
+      "Number": 1
+    },
+    {
+      "Question": "There is no princess, only Zuul, who is Zuul?",
+      "Category": "Movies",
+      "one": "Mario brothers forgotten Princess",
+      "two": "Zuul the Gatekeeper of Gozer",
+      "three": "Dana",
+      "Answer": "Zuul the Gatekeeper of Gozer",
+      "Number": 2
+    },
+      {
+      "Question": "There is no princess, only Zuul, who is Zuul?",
+      "Category": "Movies",
+      "one": "Mario brothers forgotten Princess",
+      "two": "Zuul the Gatekeeper of Gozer",
+      "three": "Dana",
+      "Answer": "Zuul the Gatekeeper of Gozer",
+      "Number": 2
+    },
+     {
+      "Question": "What movie is known for saying, Keep firing Assholes! ...",
+      "Category": "Movies",
+      "one": "Star Wars",
+      "two": "Hitchhikers Guide to the Galaxy",
+      "three": "Space Balls",
+      "Answer": "Space Balls",
+      "Number": 3
+    },
+     {
+      "Question": "What is 42?",
+      "Category": "Movies",
+      "one": "atomic number of molybdenum",
+      "two": "The answer to life, the universe, and everything",
+      "three": "The time it would take to travel across continents via burrowing a hollow straight through the earth and falling through it.",
+      "Answer": "The answer to life, the universe, and everything",
+      "Number": 2
+    },
+        {
+      "Question": "What country in the world has an island inhabitated only by friendly bunnies?",
+      "Category": "General",
+      "one": "Ireland",
+      "two": "Japan",
+      "three": "Russia",
+      "Answer": "Japan",
+      "Number": 2
+    },
+    {
+      "Question": "What is buttload used to measure?",
+      "Category": "General",
+      "one": "It's not a real measurement",
+      "two": "Butts",
+      "three": "Wine and other alcoholic beverages",
+      "Answer": "Wine and other alcoholic beverages",
+      "Number": 3
+    },
+      {
+      "Question": "What year did Daytona Interantional Speedway open?",
+      "Category": "General",
+      "one": "1959",
+      "two": "1962",
+      "three": "1969",
+      "Answer": "1959",
+      "Number": 1
+    },
+     {
+      "Question": "What year did Harley release its first public motocycle?",
+      "Category": "Races",
+      "one": "1887",
+      "two": "1901",
+      "three": "1903",
+      "Answer": "1903",
+      "Number": 3
+    },
+     {
+      "Question": "How many players are there in a baseball team?",
+      "Category": "General",
+      "one": "9",
+      "two": "12",
+      "three": "15",
+      "Answer": "9",
+      "Number": 1
+    },
+    {
+      "Question": "Who is famous for saying, Live Long and Prosper?",
+      "Category": "General",
+      "one": "Captain Kirk",
+      "two": "Spock",
+      "three": "Han Solo",
+      "Answer": "Spock",
+      "Number": 2
+    },
+     {
+      "Question": "According to Greek mythology who was the first woman on earth?",
+      "Category": "General",
+      "one": "Pandora",
+      "two": "Helen",
+      "three": "Athena",
+      "Answer": "Pandora",
+      "Number": 1
+    },
+     {
+      "Question": "What is the hottest pepper in the world?",
+      "Category": "General",
+      "one": "Korean Go-Chu",
+      "two": "Ghost Pepper",
+      "three": "Pepper X",
+      "Answer": "Pepper X",
+      "Number": 3
+    },
+    {
+      "Question": "How many US states are there?",
+      "Category": "General",
+      "one": "48",
+      "two": "50",
+      "three": "52",
+      "Answer": "50",
+      "Number": 2
+    },
+     {
+      "Question": "What color was the original Hulk?",
+      "Category": "General",
+      "one": "Green",
+      "two": "Blue",
+      "three": "Grey",
+      "Answer": "Grey",
+      "Number": 3
+    },
+     {
+      "Question": "What is the degree of a triangle?",
+      "Category": "General",
+      "one": "90",
+      "two": "180",
+      "three": "270",
+      "Answer": "180",
+      "Number": 2
+    },
+     {
+      "Question": "What is pi?",
+      "Category": "General",
+      "one": "3.14159265359",
+      "two": "3.14259265359",
+      "three": "3.14149265359",
+      "Answer": "3.4159265359",
+      "Number": 1
+    },
+      {
+      "Question": "Solve 6/2(1+2)",
+      "Category": "General",
+      "one": "1",
+      "two": "6",
+      "three": "9",
+      "Answer": "9",
+      "Number": 3
+    },
+    {
+      "Question": "Solve 6/2(1+2)",
+      "Category": "General",
+      "one": "1",
+      "two": "6",
+      "three": "9",
+      "Answer": "9",
+      "Number": 3
+    },
+     {
+      "Question": "What is a homophone for stare?",
+      "Category": "General",
+      "one": "Stair",
+      "two": "Rates",
+      "three": "Star",
+      "Answer": "Stair",
+      "Number": 1
+    },
+       {
+      "Question": "What is a homophone for stare?",
+      "Category": "General",
+      "one": "Stair",
+      "two": "Rates",
+      "three": "Star",
+      "Answer": "Stair",
+      "Number": 1
+    },
+       {
+      "Question": "Who was the second president of the US?",
+      "Category": "General",
+      "one": "Jefferson",
+      "two": "Franklin",
+      "three": "Adams",
+      "Answer": "Adams",
+      "Number": 3
+    },
+     {
+      "Question": "President Adams was known as the father of what?",
+      "Category": "General",
+      "one": "The country",
+      "two": "Economics",
+      "three": "Politics",
+      "Answer": "2",
+      "Number": 2
+    },
+      {
+      "Question": "What sits at the end of Pont de Grenelle in Paris France?",
+      "Category": "General",
+      "one": "Eiffle Tower",
+      "two": "Statue of Liberty",
+      "three": "The Thinker",
+      "Answer": "2",
+      "Number": 2
+    },
+      {
+      "Question": "When did the Berlin Wall Fall?",
+      "Category": "General",
+      "one": "August 13, 1961",
+      "two": "July 7th, 1988",
+      "three": "November 9, 1989",
+      "Answer": "3",
+      "Number": 3
+    },
+    {
+      "Question": "How long is the great wall of China?",
+      "Category": "General",
+      "one": "9,232 miles",
+      "two": "11, 245 miles",
+      "three": "13,170 miles",
+      "Answer": "3",
+      "Number": 3
+    }
+    
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  ]
+}
